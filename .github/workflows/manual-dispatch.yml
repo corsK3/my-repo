@@ -1,4 +1,4 @@
-name: Manual
+name: Manual Dispatch
 on:
   workflow_dispatch:
     inputs:
@@ -11,4 +11,4 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{inputs.greeting}}"
+      - run: echo "${{ inputs.greeting }}"
